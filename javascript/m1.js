@@ -68,4 +68,20 @@
 //     .catch(error =>{
 //     console.log ("Error: " + error)
 //   });
-console.log ("version 1")
+
+
+const persons = [
+    {firstname : "Malcom", lastname: "Reynolds"},
+    {firstname : "Kaylee", lastname: "Frye"},
+    {firstname : "Jayne", lastname: "Cobb"}
+  ];
+  
+ const person = persons.map((name=>{
+    return [name.firstname,name.lastname].join(" ");
+ }));
+  
+//   function getFullName(item) {
+//     return [item.firstname,item.lastname].join(" ");
+//   }
+
+  console.log(person)
